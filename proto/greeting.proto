@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package hello;
+
+service Greeting{
+    rpc SayHello(Lang) returns(Void) {}
+}
+
+message Lang {
+    string lang = 1;
+}
+
+message Void {}
